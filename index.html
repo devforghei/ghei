@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloody Valentine untuk Getsa</title>
+    <title>Valentine untuk Getsa</title>
     <style>
         body {
-            background-color: #200000;
-            font-family: Arial, sans-serif;
+            background-color: #ffd1dc;
+            font-family: "Georgia", serif;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             height: 100vh;
             padding-left: 50px;
             position: relative;
-            color: #ff0000;
+            color: #b3005e;
             overflow: hidden;
         }
         .container {
             text-align: left;
             max-width: 400px;
-            background-color: rgba(50, 0, 0, 0.8);
+            background-color: rgba(255, 182, 193, 0.8);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
             word-wrap: break-word;
         }
         h1 {
             font-size: 2em;
             margin-bottom: 10px;
-            color: #b30000;
+            color: #ff69b4;
         }
         p {
             font-size: 1.2em;
-            color: #ff4d4d;
+            color: #d1477c;
         }
         .background {
             position: absolute;
@@ -41,30 +41,21 @@
             height: 100%;
             top: 0;
             left: 0;
-            display: flex;
-            flex-wrap: wrap;
-            font-size: 2rem;
-            opacity: 0.2;
-            pointer-events: none;
-            animation: scrollBackground 20s linear infinite;
-        }
-        .emoji {
-            margin: 10px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="0" y="50" font-size="40">💕💖🎀💌💗💞</text></svg>');
+            background-size: 100px 100px;
+            animation: scrollBackground 10s linear infinite;
         }
         @keyframes scrollBackground {
-            from { transform: translateY(0); }
-            to { transform: translateY(-100%); }
+            from { background-position: 0 0; }
+            to { background-position: 100px 100px; }
         }
     </style>
 </head>
 <body>
-    <div class="background">
-        <span class="emoji">🩸</span><span class="emoji">🔪</span><span class="emoji">💔</span><span class="emoji">🖤</span><span class="emoji">🌑</span><span class="emoji">👁️</span>
-        <span class="emoji">⚰️</span><span class="emoji">🕷️</span><span class="emoji">🌹</span><span class="emoji">☠️</span><span class="emoji">🔥</span><span class="emoji">🦇</span>
-    </div>
+    <div class="background"></div>
     <div class="container">
-        <h1>Bloody Valentine, Getsa 🩸</h1>
-        <p>Cinta kita terukir dalam darah dan luka, tapi tetap indah dalam kekelaman. Happy Bloody Valentine, sayang. 💔🔪</p>
+        <h1>Happy Valentine, Getsa 💕</h1>
+        <p>Cinta ini semanis permen dan selembut pita. Happy Valentine, my love! 💖🎀</p>
     </div>
 </body>
 </html>
