@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine untuk Getsa</title>
+    <title>Bloody Valentine untuk Getsa</title>
     <style>
         body {
-            background-color: #ffd1dc;
+            background-color: #200000;
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-start;
             align-items: center;
             height: 100vh;
-            padding-right: 50px;
+            padding-left: 50px;
             position: relative;
+            color: #ff0000;
+            overflow: hidden;
         }
         .container {
-            text-align: right;
-            color: #b00050;
+            text-align: left;
             max-width: 400px;
+            background-color: rgba(50, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            word-wrap: break-word;
         }
         h1 {
             font-size: 2em;
             margin-bottom: 10px;
+            color: #b30000;
         }
         p {
             font-size: 1.2em;
+            color: #ff4d4d;
         }
         .background {
             position: absolute;
@@ -36,27 +44,27 @@
             display: flex;
             flex-wrap: wrap;
             font-size: 2rem;
-            opacity: 0.3;
+            opacity: 0.2;
             pointer-events: none;
+            animation: scrollBackground 20s linear infinite;
         }
         .emoji {
             margin: 10px;
-            animation: float 3s infinite alternate ease-in-out;
         }
-        @keyframes float {
-            from { transform: translateY(0px); }
-            to { transform: translateY(-10px); }
+        @keyframes scrollBackground {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100%); }
         }
     </style>
 </head>
 <body>
     <div class="background">
-        <span class="emoji">💖</span><span class="emoji">💕</span><span class="emoji">🌸</span>
-        <span class="emoji">💗</span><span class="emoji">💞</span><span class="emoji">🎀</span>
+        <span class="emoji">🩸</span><span class="emoji">🔪</span><span class="emoji">💔</span><span class="emoji">🖤</span><span class="emoji">🌑</span><span class="emoji">👁️</span>
+        <span class="emoji">⚰️</span><span class="emoji">🕷️</span><span class="emoji">🌹</span><span class="emoji">☠️</span><span class="emoji">🔥</span><span class="emoji">🦇</span>
     </div>
     <div class="container">
-        <h1>Happy Valentine, Getsa! 💘</h1>
-        <p>Getsa, aku bersyukur banget bisa ada di samping kamu (walau LDR, wkwk). Kamu selalu jadi alasan aku senyum setiap hari. Semoga hari ini penuh cinta dan kebahagiaan buat kita berdua. Love you! 💓</p>
+        <h1>Bloody Valentine, Getsa 🩸</h1>
+        <p>Cinta kita terukir dalam darah dan luka, tapi tetap indah dalam kekelaman. Happy Bloody Valentine, sayang. 💔🔪</p>
     </div>
 </body>
 </html>
